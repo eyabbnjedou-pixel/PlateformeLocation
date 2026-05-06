@@ -369,6 +369,7 @@ Internationalisation (FR/EN)
 9. Auteurs
 
 aya.benjeddou2026@gmail.com
+eyabbnjedou@gmail.com
 
 Projet réalisé dans le cadre du module : Développement d’applications Web avec Jakarta EE
 Encadré par : Sofiane Hachicha et Nesrine Akrout
