@@ -1,0 +1,31 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- DB -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PlateformeLocation</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">pass</property>
+
+        <!-- Dialect (Hibernate 6 safe) -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Debug -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Auto update -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Entities  -->
+        <mapping class="model.Utilisateur"/>
+		<mapping class="model.Admin"/>
+		<mapping class="model.Agent"/>
+		<mapping class="model.Bien"/>
+		<mapping class="model.Reservation"/>
+		<mapping class="model.Paiement"/>
+		<mapping class="model.CategorieBien"/>
+		<mapping class="model.AvisBien"/>
+		<mapping class="model.Client"/>
+
+    </session-factory>
+</hibernate-configuration>
